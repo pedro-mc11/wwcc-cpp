@@ -17,9 +17,13 @@ int main() {
     if(unit == 'C') {
         cout << "\n" << temperature << "˚C is equal to " << (temperature * 9/5) + 32 << "˚F";
     }
-    else {
+    else if (unit == 'F'){
         cout << "\n" << temperature << "˚F is equal to " << (temperature - 32) * 5/9 << "˚C" << endl;
     }
+    else {
+        cout << "[Not a valid unit of temperature]"
+    }
+
     return 0;
 }
 
