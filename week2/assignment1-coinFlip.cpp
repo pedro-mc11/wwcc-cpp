@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cstdlib>  // For rand() function
 #include <ctime>    // For time() function
-#include <iomanip>  // For setprecision
 using namespace std;
 
 int main() {
@@ -17,19 +16,16 @@ int main() {
     cin >> flips;
 
     cout << "Simulating " << flips << " coin flips..." << endl << endl;
-
-    // Simulate coin flips
+    
     for (int i = 0; i < flips; ++i) {
-        int flipResult = rand() % 2; // 0 = heads, 1 = tails
+        int flipResult = rand() % 2; 
         if (flipResult == 0) {
             heads++;
         } else {
             tails++;
         }
     }
-
-   
-    // Display results
+    
     cout << "Results:" << endl;
     cout << "Heads: " << heads << " (" << ("(%d)", heads) << ".00%)" << endl;
     cout << "Tails: " << tails << " (" <<("(%d)", tails) << ".00%)" << endl;
