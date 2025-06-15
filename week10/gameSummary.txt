@@ -1,7 +1,1 @@
-====Game Summary=====
-You scored: 20 points
-You made it to scene: 3
-Your trophies: 
--SCALPEL
--TRACTOR BEAM BUTTON
-=====================
+
